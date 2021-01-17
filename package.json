@@ -1,0 +1,32 @@
+{
+  "name": "payroll-dates",
+  "version": "1.0.0",
+  "description": "Small command line utility to help a small ﬁctional company calculate the dates on which they should pay their sales staff",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node ./node_modules/mocha/bin/mocha ./test/*",
+    "coverage": "node ./node_modules/nyc/bin/nyc npm run test",
+    "lint": "node ./node_modules/eslint/bin/eslint.js ./lib ./test index.js",
+    "lint-fix": "node ./node_modules/eslint/bin/eslint.js ./lib ./test index.js --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rick-bjj/burroughs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rick-bjj/burroughs/issues"
+  },
+  "homepage": "https://github.com/rick-bjj/burroughs#readme",
+  "dependencies": {
+    "csv-writer": "^1.6.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^7.18.0",
+    "mocha": "^8.2.1",
+    "nyc": "^15.1.0"
+  }
+}
